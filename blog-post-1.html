@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Title - Rich Pensak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --forest: #1e3a2e;
+            --deep-teal: #2a5a52;
+            --sage: #6b8778;
+            --cream: #f7f5ed;
+            --off-white: #fdfbf5;
+            --charcoal: #2d2d2d;
+            --brass: #a68b5b;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: var(--charcoal);
+            background-color: var(--cream);
+        }
+
+        nav {
+            background-color: var(--forest);
+            padding: 1.2rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            color: var(--cream);
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        nav a:hover {
+            color: var(--brass);
+        }
+
+        article {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 2rem;
+        }
+
+        .back-to-blog {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--forest);
+            color: var(--cream);
+            text-decoration: none;
+            border: 1px solid var(--forest);
+            transition: all 0.3s;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+
+        .back-to-blog:hover {
+            background-color: transparent;
+            color: var(--forest);
+            border-color: var(--brass);
+        }
+
+        .blog-post-title {
+            font-size: 3rem;
+            color: var(--forest);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .blog-post-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: var(--sage);
+            font-size: 1rem;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--brass);
+        }
+
+        .blog-post-content {
+            background: white;
+            padding: 3rem;
+            border: 1px solid #e5e1d5;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        .blog-post-content p {
+            margin-bottom: 1.5rem;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .blog-post-content h3 {
+            color: var(--deep-teal);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem 0;
+            font-weight: 400;
+        }
+
+        .blog-post-content img {
+            width: 100%;
+            height: auto;
+            margin: 2.5rem 0;
+            border: 1px solid #e5e1d5;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: var(--sage);
+            font-size: 0.95rem;
+            margin-top: -2rem;
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            background-color: var(--forest);
+            color: var(--cream);
+            text-align: center;
+            padding: 2.5rem;
+            border-top: 2px solid var(--brass);
+            margin-top: 4rem;
+        }
+
+        footer p {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-title {
+                font-size: 2rem;
+            }
+
+            .blog-post-content {
+                padding: 2rem;
+            }
+
+            article {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html#professional">Professional</a></li>
+            <li><a href="index.html#blog">Top End Adventures</a></li>
+            <li><a href="index.html#marine">Marine</a></li>
+            <li><a href="index.html#music">Music</a></li>
+            <li><a href="index.html#art">Art</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <a href="index.html#blog" class="back-to-blog">← Back to Adventures</a>
+
+        <h1 class="blog-post-title">Offered PhD Position in Cairns</h1>
+        
+        <div class="blog-post-meta">
+            <span>📅 28 November 2025</span>
+            <span>📍 Melbourne, Victoria</span>
+            <span>👥 Dianne Gleeson (optional)</span>
+        </div>
+
+        <div class="blog-post-content">
+            <p>"PhDs ruin lives" Thats the lesson from one of the most inspiring people I have ever met Lana austin. I saw her PhD threaten her to her very core. Lana is an extreme high-achieving, ecologist. 
+I watched, I listened, I learned. I resolved I would not do a PhD.I'm too old. I'm not smart enough. I'm too tired. I don't code well enough. I'm not fit. I have no money. What about Smith?</p>
+
+            <p>Surprise! The perfect PhD presented itself - I did not go looking, but there it was being sent to me by a colleague. I had a quick read. and I knew I had no choice but to apply. I mean, I can always 
+deceide later right? No, I don't want to do a PhD, I want to do THIS PhD. This is me to a T. My PhD follows naturally from my honours research project using eDNA to detect invasive species, but this time we are moving from the sea into 
+the air! But I want adventures!! I don't want to be stuck. Well, THIS PhD requires me to move to Cairns because it involves extensive travel around the top end of Australia. Wait, what if I can go to Cape York with this? 
+I could travel all around Darwin, who knows where this will lead? I could address my big career goal of woking with Indigenous Australians. I will develop my skills in communicating complex concepts to a wide audience. 
+I will develop my molecular skills to answer important questions and I will be doing real research which will benefit Australias biosecurity, something I am very passionate about. It's not WILL I do this? it's how could I not? OMG guys. I interviewed for this thing and guess what? </p>
+
+<p> The interview was incredible. I interveiwed better than I have before. I was all over it and everyone knew that. I know the science and In understand the space. They offered me this very competitive PhD same day. They loved me! and I loved them they seem like really thoughtful, considerate, compassionate and caring people and I would be thrilled to have them as my supervisors.</p>
+
+            <img src="blog-1-photo.png" alt="Description of photo">
+            <p class="image-caption">Caption for your photo - describe what we're seeing</p>
+
+            <h3>A Section Heading (Optional)</h3>
+            
+            <p>You can break up longer posts with section headings like this. Maybe you want to separate "The Journey There" from "What We Found" from "Reflections".</p>
+
+            <img src="blog-photo-2.jpg" alt="Description of photo">
+            <p class="image-caption">Another photo with caption</p>
+
+            <p>Continue your story here. Add as many photos and paragraphs as you need!</p>
+
+            <img src="blog-photo-3.jpg" alt="Description of photo">
+            <p class="image-caption">Third photo caption</p>
+
+            <p>Your closing thoughts, reflections, what's next, etc.</p>
+        </div>
+    </article>
+
+    <footer>
+        <p>© 2025 Rich Pensak</p>
+    </footer>
+</body>
+</html>
