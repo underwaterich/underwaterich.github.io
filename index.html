@@ -387,7 +387,101 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             letter-spacing: 0.5px;
         }
+css        /* Blog Section */
+        #blog {
+            background: var(--off-white);
+        }
 
+        .blog-intro {
+            margin-bottom: 3rem;
+            font-style: italic;
+            color: var(--sage);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .blog-card {
+            background: white;
+            border: 1px solid #e5e1d5;
+            overflow: hidden;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+        }
+
+        .blog-thumbnail {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #f7f5ed 0%, #ebe8dc 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #e5e1d5;
+            overflow: hidden;
+        }
+
+        .blog-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .blog-thumbnail-placeholder {
+            font-size: 4rem;
+            opacity: 0.2;
+            color: var(--sage);
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.85rem;
+            color: var(--sage);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .blog-card h3 {
+            color: var(--forest);
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 400;
+        }
+
+        .blog-excerpt {
+            color: var(--charcoal);
+            line-height: 1.6;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--brass);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
         /* Marine Conservation with tabs */
         #marine {
             background: var(--cream);
@@ -624,6 +718,9 @@
             .gallery {
                 grid-template-columns: 1fr;
             }
+                        .blog-grid {
+                grid-template-columns: 1fr;
+            }
 
             .cv-content,
             .contact-form,
@@ -642,6 +739,7 @@
     <nav>
         <ul>
             <li><a href="#professional">Professional</a></li>
+            <li><a href="#blog">Top End Adventures</a></li>
             <li><a href="#marine">Marine</a></li>
             <li><a href="#music">Music</a></li>
             <li><a href="#art">Art</a></li>
@@ -689,7 +787,33 @@
     <div class="botanical-divider">
         <span class="divider-ornament">❋</span>
     </div>
+    <section id="blog">
+        <h2>Top End Adventures</h2>
+        <p class="blog-intro">Documenting my PhD journey, fieldwork, diving expeditions, and wildlife encounters across northern Australia.</p>
+        
+        <div class="blog-grid">
+            <!-- Blog Post Card 1 -->
+            <a href="blog-post-1.html" class="blog-card">
+                <div class="blog-thumbnail">
+                    <img src="blog-1-photo.jpg" alt="Offered PhD Position in Cairns">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 28 November 2025</span>
+                        <span>📍 Melbourne, Victoria</span>
+                        <span>👥 Dianne Gleeson</span>
+                    </div>
+                    <h3>Offered PhD Position in Cairns</h3>
+                    <p class="blog-excerpt">The moment I received the offer to pursue my PhD in Cairns - a life-changing opportunity...</p>
+                    <span class="read-more">Read More →</span>
+                </div>
+            </a>
+        </div>
+    </section>
 
+    <div class="botanical-divider">
+        <span class="divider-ornament">✤</span>
+    </div>
     <section id="marine">
         <h2>Marine</h2>
         
