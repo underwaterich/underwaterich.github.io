@@ -266,6 +266,134 @@
             border-color: var(--brass);
         }
 
+        /* Research Portfolio Tabs */
+        .research-portfolio {
+            margin-top: 3rem;
+        }
+
+        .research-portfolio h3 {
+            color: var(--deep-teal);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .portfolio-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            border-bottom: 2px solid #e5e1d5;
+        }
+
+        .portfolio-tab-button {
+            padding: 1rem 2rem;
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid transparent;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            color: var(--sage);
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            margin-bottom: -2px;
+        }
+
+        .portfolio-tab-button:hover {
+            color: var(--deep-teal);
+        }
+
+        .portfolio-tab-button.active {
+            color: var(--deep-teal);
+            border-bottom-color: var(--brass);
+        }
+
+        .portfolio-tab-content {
+            display: none;
+        }
+
+        .portfolio-tab-content.active {
+            display: block;
+        }
+
+        .portfolio-content {
+            background: white;
+            padding: 3rem;
+            border: 1px solid #e5e1d5;
+            margin-top: 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        .portfolio-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .data-download {
+            display: inline-block;
+            margin: 1.5rem 0;
+            padding: 0.8rem 2rem;
+            background-color: var(--deep-teal);
+            color: var(--cream);
+            text-decoration: none;
+            border: 1px solid var(--deep-teal);
+            transition: all 0.3s;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .data-download:hover {
+            background-color: transparent;
+            color: var(--deep-teal);
+            border-color: var(--brass);
+        }
+
+        .research-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .research-item {
+            background: var(--off-white);
+            border: 1px solid #e5e1d5;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .research-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+        }
+
+        .research-item img, .research-item video {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .research-caption {
+            padding: 1rem;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.95rem;
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        .graph-display {
+            margin: 2rem 0;
+        }
+
+        .graph-display img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border: 1px solid #e5e1d5;
+            margin: 1rem 0;
+        }
         /* Music Section */
         #music {
             background: var(--cream);
@@ -721,6 +849,14 @@ css        /* Blog Section */
                         .blog-grid {
                 grid-template-columns: 1fr;
             }
+                    .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .research-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
 
             .cv-content,
             .contact-form,
@@ -781,6 +917,81 @@ css        /* Blog Section */
             <p><em>Detail your professional experience here</em></p>
 
             <a href="your-honours-thesis.pdf" class="thesis-link" target="_blank">View Honours Thesis</a>
+
+            <!-- Research Portfolio Section -->
+            <div class="research-portfolio">
+                <h3>Research Portfolio</h3>
+                
+                <div class="portfolio-tabs">
+                    <button class="portfolio-tab-button active" onclick="openPortfolioTab(event, 'completed')">Completed Works</button>
+                    <button class="portfolio-tab-button" onclick="openPortfolioTab(event, 'ongoing')">Ongoing Works</button>
+                </div>
+
+                <div id="completed" class="portfolio-tab-content active">
+                    <div class="portfolio-content">
+                        <h4 style="color: var(--deep-teal); font-size: 1.5rem; margin-bottom: 1rem;">Honours Research Project</h4>
+                        <p><em>Add your honours project description here - what was the research question, methodology, key findings?</em></p>
+
+                        <h4 style="color: var(--deep-teal); font-size: 1.3rem; margin: 2rem 0 1rem 0;">Raw Data & Results</h4>
+                        <a href="honours-raw-data.xlsx" class="data-download" download>📊 Download Raw Data (Excel)</a>
+
+                        <div class="graph-display">
+                            <img src="graph-1.jpg" alt="Research graph 1">
+                            <!-- Add more graphs as needed -->
+                        </div>
+
+                        <h4 style="color: var(--deep-teal); font-size: 1.3rem; margin: 2rem 0 1rem 0;">Field & Lab Documentation</h4>
+                        
+                        <div class="research-gallery">
+                            <!-- Photo 1 -->
+                            <div class="research-item">
+                                <img src="honours-photo-1.jpg" alt="Field work photo 1">
+                                <div class="research-caption">Caption describing what's happening in this photo</div>
+                            </div>
+
+                            <!-- Photo 2 -->
+                            <div class="research-item">
+                                <img src="honours-photo-2.jpg" alt="Field work photo 2">
+                                <div class="research-caption">Caption describing what's happening in this photo</div>
+                            </div>
+
+                            <!-- Photo 3 -->
+                            <div class="research-item">
+                                <img src="honours-photo-3.jpg" alt="Lab work photo 3">
+                                <div class="research-caption">Caption describing what's happening in this photo</div>
+                            </div>
+
+                            <!-- Photo 4 -->
+                            <div class="research-item">
+                                <img src="honours-photo-4.jpg" alt="Lab work photo 4">
+                                <div class="research-caption">Caption describing what's happening in this photo</div>
+                            </div>
+
+                            <!-- Photo 5 -->
+                            <div class="research-item">
+                                <img src="honours-photo-5.jpg" alt="Research photo 5">
+                                <div class="research-caption">Caption describing what's happening in this photo</div>
+                            </div>
+
+                            <!-- Video -->
+                            <div class="research-item">
+                                <video controls>
+                                    <source src="honours-video-1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="research-caption">Video caption - describe what we're seeing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ongoing" class="portfolio-tab-content">
+                    <div class="portfolio-content">
+                        <h4 style="color: var(--deep-teal); font-size: 1.5rem; margin-bottom: 1rem;">PhD Research (In Progress)</h4>
+                        <p><em>This section will be updated as your PhD research progresses. Add project descriptions, fieldwork photos, preliminary results, and documentation of your research journey in Cairns.</em></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -988,8 +1199,37 @@ css        /* Blog Section */
             });
         });
 
-        // Tab functionality
+        // Tab functionality for Marine section
         function openTab(evt, tabName) {
+            const tabContent = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove('active');
+            }
+
+            const tabButtons = document.getElementsByClassName('tab-button');
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove('active');
+            }
+
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        // Tab functionality for Research Portfolio
+        function openPortfolioTab(evt, tabName) {
+            const tabContent = document.getElementsByClassName('portfolio-tab-content');
+            for (let i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove('active');
+            }
+
+            const tabButtons = document.getElementsByClassName('portfolio-tab-button');
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove('active');
+            }
+
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
             // Hide all tab content
             const tabContent = document.getElementsByClassName('tab-content');
             for (let i = 0; i < tabContent.length; i++) {
