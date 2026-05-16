@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Title - Rich Pensak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --forest: #1e3a2e;
+            --deep-teal: #2a5a52;
+            --sage: #6b8778;
+            --cream: #f7f5ed;
+            --off-white: #fdfbf5;
+            --charcoal: #2d2d2d;
+            --brass: #a68b5b;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: var(--charcoal);
+            background-color: var(--cream);
+        }
+
+        nav {
+            background-color: var(--forest);
+            padding: 1.2rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            color: var(--cream);
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        nav a:hover {
+            color: var(--brass);
+        }
+
+        article {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 2rem;
+        }
+
+        .back-to-blog {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--forest);
+            color: var(--cream);
+            text-decoration: none;
+            border: 1px solid var(--forest);
+            transition: all 0.3s;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+
+        .back-to-blog:hover {
+            background-color: transparent;
+            color: var(--forest);
+            border-color: var(--brass);
+        }
+
+        .blog-post-title {
+            font-size: 3rem;
+            color: var(--forest);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .blog-post-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: var(--sage);
+            font-size: 1rem;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--brass);
+        }
+
+        .blog-post-content {
+            background: white;
+            padding: 3rem;
+            border: 1px solid #e5e1d5;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        .blog-post-content p {
+            margin-bottom: 1.5rem;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .blog-post-content h3 {
+            color: var(--deep-teal);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem 0;
+            font-weight: 400;
+        }
+
+        .blog-post-content img {
+            width: 100%;
+            height: auto;
+            margin: 2.5rem 0;
+            border: 1px solid #e5e1d5;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: var(--sage);
+            font-size: 0.95rem;
+            margin-top: -2rem;
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            background-color: var(--forest);
+            color: var(--cream);
+            text-align: center;
+            padding: 2.5rem;
+            border-top: 2px solid var(--brass);
+            margin-top: 4rem;
+        }
+
+        footer p {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-title {
+                font-size: 2rem;
+            }
+
+            .blog-post-content {
+                padding: 2rem;
+            }
+
+            article {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html#professional">Professional</a></li>
+            <li><a href="index.html#blog">Top End Adventures</a></li>
+            <li><a href="index.html#marine">Marine</a></li>
+            <li><a href="index.html#music">Music</a></li>
+            <li><a href="index.html#art">Art</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <a href="index.html#blog" class="back-to-blog">← Back to Adventures</a>
+
+        <h1 class="blog-post-title">Flips and cotton-pickin' BACK flips</h1>
+        
+        <div class="blog-post-meta">
+            <span>📅 16 May 2026</span>
+            <span>📍 Melbourne, Victoria</span>
+            <span>👥 Maxine Piggott, Amanda Padovan, Hannah </span>
+        </div>
+
+        <div class="blog-post-content">
+            <p> Well, The Department of Agriculture had me fired. It was an awful experience. It took me months to understand what had happened and even longer to recover. It was seriously traumatic. In short, I was scapegoated. There was a mistake made and covered up by people much much higher than me. Millions wasted and I simply got too close to it by being a competent employee and a gifted communicator. I made myself a threat to a work place that wanted to have young, incompetent staff that do not ask a thing and simply say yes to everything. Even now, it feels like I am writing as a consipracy theirist, but these things really do go on. Allegations were brough against me, a laundry list of awful attocities I did such as printing 2 pages for person use (which is totally covered by the acceptable use policy). In the end, the fact I had lost my licence was their official reason for reccomending my termination to the secretary. Funny how it was ok for the first three months and not for the second three months. Hardly worth losing a valuable employee over. Even if everything else is wrong, I had exceeded so many goals in my short time there, it very strongly seems like the appropriate response would be to support me to improve if all these supposed failures are true, I was never told and never afforded any opportunities to improve which is a right in the probstion code. The fact is, I fucked up by saying one wrong thing in the office and I paid for it. The director heard me, and would not speak to me agina, refused to let me have a chat, assured me everything was fine and that he was too busy, and then brought a world of allegations against me. 
+After years of study, and disappopintment trying to get a job, being poor for 8 years, struggling, gaining weight and being fed up, this really hit me hard. But what hit me harder was that at the same time, Lana dropped me as a friend.</p>
+
+            <p>It devastated me. I actually responded physically. My gout flared up, both my knees where so swollen. I couldn't walk. I was unemployed at Christmas time. I was literally crawling from my bed to the couch. I broke down physically and mentally. I had to process being rejected by my work AND by my closest freind. A friend who not long before I had asked to marry me. Well, I decided that 2026 was a year for me to take as long as i need to recover. To be gentle with myself. To make art, enjoy nature and be calm. My body has been scaring me. My mobility is completely gone. I can't do the thingsI've always been able to do. I haven't gone backwards, I've completely collapsed. I am slowly now working on trying to repair. I am in therapy, I am seeing a regular GP again, and starting medications to help me. One medicatin is antidepressants for the first time as I am truly struggling. </p>
+
+<p>Antidepressants are simply awful. I felt much much worse. I couldn't cum. I was just sadness maximised. I was lost. I was lazily applying for things still, but only the BEST opportunities. I came super close to a PhD with Melbourne Uni and CSIRO and Melbourne Water and Bunurrong researching urban Billabongs. That would have been incredible, but I came second, so it didn't happen. I applied for a few international PhDs, and some jobs, but not many. I was kind of targeting Scandenavia. I kind of just paused life. I knew how well qualified I am and I knew my value and I actually just trusted the right thing would happen without any push... and then out of the blue, I recieved a long message that I initially thought was a scam. but it mentioned Smith by name. I somehow realised it was Hannah. </p>
+
+            <img src="blog-1-photo-3.png" alt="Description of photo">
+            <p class="image-caption">Me and Hannah - every girl wanted to be with us every boy wanted to be with us haha</p>
+
+            <h3>A road to recovery comes when you aren't looking for it</h3>
+            
+            <p>So Hannah was an incredibly close friend. Our children grew up together. Me and Hannah kind of did too. We met in high school. The point here, is that Hannah showed me love by reaching out. Suddenly, I was no longer being abandoned by everyone I had ever met. I was valued, wanted, missed and loved. Hannah allowed me to forgive myself for things I hadn't done, and to understand I can give and recieve love. Our reconnection was strong and it felt just as full and natural as i once did six years ago. I can't thank her enough for trusting her instincts to reach out to me again. I wasn't brave enough. As tends to happen, when momentum begins to go, other things hop in under the covers too. I was offered an oppportunity to interview for a PhD I didn't evn remember applying for. Well, actually it's a cool PhD. It's in Darwin. The top end adventure may continue after all.</p>
+
+            <img src="blog-photo-4.jpg" alt="Description of photo">
+            <p class="image-caption">I just got my friend back - but the adventure is only just beggining</p>
+
+            <p>Ok, so I was offered the PhD. The second time I was the preferred candidate. It is something to do with Bt resistance on a pctton pest so it has sponsors with deep pockets. Bayer, Cotton australia, CSIRO, Charles Darwin University. Its pretty cool. I'm comfortable, I talked about whether or not we are happy with Bayer ethically in the interview, I satisfied my reservations about secrecy that killed me at the department of ag, becasue any secrecy or closed conversations other than obvious prcedural things is now a huge red flag for me and I won't enter into a situation like that again. I have shifted mentally. I am not looking to promote myself, but I am also not looking to be pushed around. I am chosing what I want in life. I am chosing kindsness and openess deliberately and when my ethics are compromised, I am chosing to continue to speak up even though behaving that way has already cost me multiple jobs. The world will simply have to find a way to catch up. I am hoping I can begin the PhD as soon as possible, but I am aslo hoping I can move to Darwin next year about late February. I want to have summer here. where I can dive all summer and then go study bugs and genetics and population dynamics and whatnot. Oh I am so Jazzed about Darwin. I remember so many little things. Mindle beach market, possum tree cafe, endless 
+
+            <img src="blog-photo-3.jpg" alt="Description of photo">
+            <p class="image-caption">Third photo caption</p>
+
+            <p>Your closing thoughts, reflections, what's next, etc.</p>
+        </div>
+    </article>
+
+    <footer>
+        <p>© 2025 Rich Pensak</p>
+    </footer>
+</body>
+</html>
